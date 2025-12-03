@@ -1,0 +1,3010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustyBM | Premium Facebook Accounts, Business Managers & Fan Pages</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ========== GLOBAL STYLES ========== */
+        :root {
+            --primary: #1877F2;
+            --secondary: #42B72A;
+            --accent: #FF6B35;
+            --dark: #1c1e21;
+            --light: #f0f2f5;
+            --gray: #65676b;
+            --light-gray: #e4e6eb;
+            --white: #FFFFFF;
+            --success: #31A24C;
+            --agency-color: #FF3366;
+            --setup-color: #9D4EDD;
+            --profile-color: #4361EE;
+            --bm-color: #2ECC71;
+            --verified-color: #FF9E00;
+            --fanpage-color: #FF5C8D;
+            --reviews-color: #6C63FF;
+            --faq-color: #00B4D8;
+            --policy-color: #495057;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
+            --border-radius: 15px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #f0f2f5 100%);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        /* ========== HEADER ========== */
+        header {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            padding: 15px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+        
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(45deg, #1877F2, #42B72A);
+            border-radius: 50%;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        
+        .logo-icon::before {
+            content: "T";
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+        
+        /* SIMPLIFIED MENU */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-menu > li {
+            position: relative;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 0;
+        }
+        
+        .nav-menu a i {
+            font-size: 1.1rem;
+        }
+        
+        /* Dropdown for "Our Products" */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(28, 30, 33, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 15px;
+            min-width: 250px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 100;
+        }
+        
+        .nav-menu > li:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-menu a {
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: block;
+            margin: 5px 0;
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .dropdown-menu a:hover {
+            background: rgba(24, 119, 242, 0.2);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(135deg, rgba(28, 30, 33, 0.95) 0%, rgba(28, 30, 33, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 180px 0 120px;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(24, 119, 242, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(66, 183, 42, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 107, 53, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 60% 60%, rgba(157, 78, 221, 0.15) 0%, transparent 50%);
+            animation: heroPulse 8s ease-in-out infinite alternate;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        @keyframes heroPulse {
+            0% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.02); }
+            100% { opacity: 0.4; transform: scale(1); }
+        }
+        
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: floatParticle linear infinite;
+        }
+        
+        .particle:nth-child(1) { width: 10px; height: 10px; top: 20%; left: 10%; animation-duration: 20s; }
+        .particle:nth-child(2) { width: 15px; height: 15px; top: 60%; left: 80%; animation-duration: 25s; }
+        .particle:nth-child(3) { width: 8px; height: 8px; top: 40%; left: 30%; animation-duration: 15s; }
+        .particle:nth-child(4) { width: 12px; height: 12px; top: 70%; left: 40%; animation-duration: 22s; }
+        .particle:nth-child(5) { width: 6px; height: 6px; top: 30%; left: 70%; animation-duration: 18s; }
+        
+        @keyframes floatParticle {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% {
+                transform: translateY(-100vh) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #1877F2, #42B72A);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(24,119,242,0.3);
+            animation: fadeIn 1s ease-out 0.6s both;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #fff, #1877F2, #42B72A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #1877F2, #42B72A);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            gap: 12px;
+            box-shadow: 0 15px 30px rgba(24,119,242,0.4);
+            transition: var(--transition);
+            animation: fadeIn 1s ease-out 0.9s both;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(24,119,242,0.5);
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* ========== NAVIGATION TABS ========== */
+        .tabs-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .tabs-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .tabs-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        
+        .tab-btn {
+            padding: 20px 35px;
+            background: #f0f2f5;
+            border: none;
+            border-radius: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1c1e21;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            min-width: 200px;
+            justify-content: center;
+            border-left: 6px solid;
+            position: relative;
+        }
+        
+        .tab-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .tab-btn.active {
+            transform: translateY(-5px);
+            color: white;
+        }
+        
+        /* TOP OFFER BADGE */
+        .top-offer-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(45deg, #FF3366, #FF0033);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(255, 51, 102, 0.4);
+            z-index: 10;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Tab colors */
+        .tab-btn[data-tab="agency-section"] {
+            border-left-color: #FF3366;
+            background: linear-gradient(135deg, #fff0f5, #ffe6ee);
+        }
+        
+        .tab-btn[data-tab="agency-section"]:hover,
+        .tab-btn[data-tab="agency-section"].active {
+            background: linear-gradient(135deg, #FF3366, #FF0033);
+        }
+        
+        .tab-btn[data-tab="setups-section"] {
+            border-left-color: #9D4EDD;
+            background: linear-gradient(135deg, #f8f9ff, #f0f2ff);
+        }
+        
+        .tab-btn[data-tab="setups-section"]:hover,
+        .tab-btn[data-tab="setups-section"].active {
+            background: linear-gradient(135deg, #9D4EDD, #7B2CBF);
+        }
+        
+        .tab-btn[data-tab="profiles-section"] {
+            border-left-color: #4361EE;
+            background: linear-gradient(135deg, #f0f7ff, #e6f0ff);
+        }
+        
+        .tab-btn[data-tab="profiles-section"]:hover,
+        .tab-btn[data-tab="profiles-section"].active {
+            background: linear-gradient(135deg, #4361EE, #3A56E9);
+        }
+        
+        .tab-btn[data-tab="business-section"] {
+            border-left-color: #2ECC71;
+            background: linear-gradient(135deg, #f0fff4, #e6ffee);
+        }
+        
+        .tab-btn[data-tab="business-section"]:hover,
+        .tab-btn[data-tab="business-section"].active {
+            background: linear-gradient(135deg, #2ECC71, #27AE60);
+        }
+        
+        .tab-btn[data-tab="verified-section"] {
+            border-left-color: #FF9E00;
+            background: linear-gradient(135deg, #fff8f0, #fff2e6);
+        }
+        
+        .tab-btn[data-tab="verified-section"]:hover,
+        .tab-btn[data-tab="verified-section"].active {
+            background: linear-gradient(135deg, #FF9E00, #E67E22);
+        }
+        
+        .tab-btn[data-tab="fanpages-section"] {
+            border-left-color: #FF5C8D;
+            background: linear-gradient(135deg, #fff0f5, #ffe6ee);
+        }
+        
+        .tab-btn[data-tab="fanpages-section"]:hover,
+        .tab-btn[data-tab="fanpages-section"].active {
+            background: linear-gradient(135deg, #FF5C8D, #E84393);
+        }
+        
+        /* ========== PRODUCTS SECTIONS ========== */
+        .products-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+            padding: 0 0 80px 0;
+        }
+        
+        .products-section.active {
+            display: block;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+        
+        .section-subtitle {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 6px;
+            border-radius: 6px;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-description {
+            color: #65676b;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 30px;
+        }
+        
+        /* Colors for different sections */
+        #agency-section .section-subtitle { color: #FF3366; border: 2px solid #FF3366; }
+        #agency-section .section-title { color: #FF3366; }
+        #agency-section .section-title::after { background: linear-gradient(90deg, #FF3366, #FF0033); }
+        
+        #setups-section .section-subtitle { color: #9D4EDD; border: 2px solid #9D4EDD; }
+        #setups-section .section-title { color: #9D4EDD; }
+        #setups-section .section-title::after { background: linear-gradient(90deg, #9D4EDD, #7B2CBF); }
+        
+        #profiles-section .section-subtitle { color: #4361EE; border: 2px solid #4361EE; }
+        #profiles-section .section-title { color: #4361EE; }
+        #profiles-section .section-title::after { background: linear-gradient(90deg, #4361EE, #3A56E9); }
+        
+        #business-section .section-subtitle { color: #2ECC71; border: 2px solid #2ECC71; }
+        #business-section .section-title { color: #2ECC71; }
+        #business-section .section-title::after { background: linear-gradient(90deg, #2ECC71, #27AE60); }
+        
+        #verified-section .section-subtitle { color: #FF9E00; border: 2px solid #FF9E00; }
+        #verified-section .section-title { color: #FF9E00; }
+        #verified-section .section-title::after { background: linear-gradient(90deg, #FF9E00, #E67E22); }
+        
+        #fanpages-section .section-subtitle { color: #FF5C8D; border: 2px solid #FF5C8D; }
+        #fanpages-section .section-title { color: #FF5C8D; }
+        #fanpages-section .section-title::after { background: linear-gradient(90deg, #FF5C8D, #E84393); }
+        
+        /* PRODUCT CARDS */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+            border-top: 8px solid;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* Badges */
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            z-index: 10;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .new-badge { background: linear-gradient(45deg, #56CCF2, #2F80ED); color: white; }
+        .hot-badge { background: linear-gradient(45deg, #FF416C, #FF4B2B); color: white; }
+        .top-badge { background: linear-gradient(45deg, #FFD700, #FFA500); color: #333; }
+        .best-badge { background: linear-gradient(45deg, #00B4DB, #0083B0); color: white; }
+        .trending-badge { background: linear-gradient(45deg, #9D50BB, #6E48AA); color: white; }
+        .premium-badge { background: linear-gradient(45deg, #FF3366, #FF0033); color: white; }
+        
+        .product-header {
+            padding: 40px 30px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .product-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Icon colors by section */
+        #agency-section .product-icon { color: #FF3366; }
+        #setups-section .product-icon { color: #9D4EDD; }
+        #profiles-section .product-icon { color: #4361EE; }
+        #business-section .product-icon { color: #2ECC71; }
+        #verified-section .product-icon { color: #FF9E00; }
+        #fanpages-section .product-icon { color: #FF5C8D; }
+        
+        .product-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #1c1e21;
+        }
+        
+        .product-description {
+            color: #65676b;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .product-features {
+            list-style: none;
+            padding: 0 30px 30px;
+            margin: 0;
+        }
+        
+        .product-features li {
+            padding: 12px 0;
+            border-bottom: 2px dashed #e4e6eb;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
+        
+        .product-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .product-features li i {
+            margin-right: 12px;
+            font-size: 1.1rem;
+            min-width: 25px;
+        }
+        
+        /* Feature icon colors by section */
+        #agency-section .product-features li i { color: #FF3366; }
+        #setups-section .product-features li i { color: #9D4EDD; }
+        #profiles-section .product-features li i { color: #4361EE; }
+        #business-section .product-features li i { color: #2ECC71; }
+        #verified-section .product-features li i { color: #FF9E00; }
+        #fanpages-section .product-features li i { color: #FF5C8D; }
+        
+        .product-price {
+            text-align: center;
+            padding: 0 30px 20px;
+        }
+        
+        .price-tag {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            background: linear-gradient(90deg, #222, #444);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-tag::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+        }
+        
+        /* Price underline colors by section */
+        #agency-section .price-tag::after { background: linear-gradient(90deg, #FF3366, #FF0033); }
+        #setups-section .price-tag::after { background: linear-gradient(90deg, #9D4EDD, #7B2CBF); }
+        #profiles-section .price-tag::after { background: linear-gradient(90deg, #4361EE, #3A56E9); }
+        #business-section .price-tag::after { background: linear-gradient(90deg, #2ECC71, #27AE60); }
+        #verified-section .price-tag::after { background: linear-gradient(90deg, #FF9E00, #E67E22); }
+        #fanpages-section .price-tag::after { background: linear-gradient(90deg, #FF5C8D, #E84393); }
+        
+        .price-tag span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #65676b;
+        }
+        
+        .product-footer {
+            padding: 0 30px 30px;
+        }
+        
+        .btn-block {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+        
+        .btn-block:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        
+        /* Button colors by section */
+        #agency-section .btn-block { background: linear-gradient(90deg, #FF3366, #FF0033); }
+        #setups-section .btn-block { background: linear-gradient(90deg, #9D4EDD, #7B2CBF); }
+        #profiles-section .btn-block { background: linear-gradient(90deg, #4361EE, #3A56E9); }
+        #business-section .btn-block { background: linear-gradient(90deg, #2ECC71, #27AE60); }
+        #verified-section .btn-block { background: linear-gradient(90deg, #FF9E00, #E67E22); }
+        #fanpages-section .btn-block { background: linear-gradient(90deg, #FF5C8D, #E84393); }
+        
+        /* ========== UPDATED STATS SECTION ========== */
+        .simple-stats-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .simple-stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(157, 78, 221, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(67, 97, 238, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .simple-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .simple-stat {
+            text-align: center;
+            padding: 40px 25px;
+            flex: 1;
+            min-width: 220px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .simple-stat::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #9D4EDD, #4361EE, #2ECC71, #FF9E00, #FF5C8D);
+        }
+        
+        .simple-stat:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .simple-stat .stat-number {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .simple-stat .stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        /* Icon colors */
+        .simple-stat:nth-child(1) .stat-icon {
+            background: linear-gradient(135deg, #9D4EDD, #7B2CBF);
+            box-shadow: 0 10px 25px rgba(157, 78, 221, 0.4);
+        }
+        
+        .simple-stat:nth-child(2) .stat-icon {
+            background: linear-gradient(135deg, #4361EE, #3A56E9);
+            box-shadow: 0 10px 25px rgba(67, 97, 238, 0.4);
+        }
+        
+        .simple-stat:nth-child(3) .stat-icon {
+            background: linear-gradient(135deg, #2ECC71, #27AE60);
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.4);
+        }
+        
+        .simple-stat:nth-child(4) .stat-icon {
+            background: linear-gradient(135deg, #FF9E00, #E67E22);
+            box-shadow: 0 10px 25px rgba(255, 158, 0, 0.4);
+        }
+        
+        /* ========== REVIEWS SECTION ========== */
+        .reviews-section {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .review-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 5px solid var(--reviews-color);
+        }
+        
+        .review-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--reviews-color), #4A44C6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-right: 20px;
+        }
+        
+        .review-meta {
+            flex-grow: 1;
+        }
+        
+        .review-name {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .review-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.95rem;
+            color: var(--gray);
+        }
+        
+        .review-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .stars {
+            color: #FFD700;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            margin-right: 15px;
+        }
+        
+        .review-text {
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+            padding-left: 20px;
+            border-left: 3px solid var(--light-gray);
+        }
+        
+        .review-footer {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .product-tag {
+            background: rgba(108, 99, 255, 0.1);
+            color: var(--reviews-color);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* ========== FAQ SECTION ========== */
+        .faq-section {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border-left: 5px solid var(--faq-color);
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            color: var(--faq-color);
+        }
+        
+        .faq-icon {
+            color: var(--faq-color);
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 30px 30px;
+            max-height: 500px;
+        }
+        
+        /* ========== POLICY SECTION ========== */
+        .policy-section {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .policy-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .policy-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border-left: 5px solid var(--policy-color);
+        }
+        
+        .policy-question {
+            padding: 25px 30px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .policy-question:hover {
+            color: var(--policy-color);
+        }
+        
+        .policy-icon {
+            color: var(--policy-color);
+            font-size: 1.4rem;
+            margin-right: 15px;
+        }
+        
+        .policy-toggle {
+            color: var(--policy-color);
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+        
+        .policy-item.active .policy-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .policy-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .policy-item.active .policy-answer {
+            padding: 30px;
+            max-height: 2000px;
+        }
+        
+        .policy-content {
+            line-height: 1.8;
+            color: var(--gray);
+        }
+        
+        .policy-content h4 {
+            color: var(--dark);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .policy-content p {
+            margin-bottom: 15px;
+        }
+        
+        .policy-content ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .policy-content li {
+            margin-bottom: 8px;
+        }
+        
+        /* ========== CONTACTS MODAL ========== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            padding: 20px;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+            animation: modalFadeIn 0.5s ease;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-container {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform: scale(0.9);
+            transition: transform 0.5s ease;
+        }
+        
+        .modal-overlay.active .modal-container {
+            transform: scale(1);
+        }
+        
+        .modal-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, 
+                #FF3366,
+                #9D4EDD, 
+                #4361EE, 
+                #2ECC71, 
+                #FF9E00, 
+                #FF5C8D);
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        .modal-icon {
+            font-size: 5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+        
+        .modal-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+            background: linear-gradient(90deg, #fff, var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .modal-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.3rem;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 22px 35px;
+            border-radius: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            min-width: 250px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        
+        .contact-btn-telegram {
+            background: linear-gradient(90deg, #0088cc, #24A1DE);
+            color: white;
+            box-shadow: 0 15px 35px rgba(0, 136, 204, 0.4);
+        }
+        
+        .contact-btn-whatsapp {
+            background: linear-gradient(90deg, #25D366, #5CDB7F);
+            color: white;
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-icon {
+            margin-right: 15px;
+            font-size: 1.8rem;
+        }
+        
+        /* ========== FOOTER ========== */
+        footer {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+            color: white;
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, 
+                #FF3366,
+                #9D4EDD, 
+                #4361EE, 
+                #2ECC71, 
+                #FF9E00, 
+                #FF5C8D);
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-logo {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .footer-about p {
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-links h3::after, .footer-contact h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 18px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links a i {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 10px;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        
+        .footer-contact i {
+            color: var(--primary);
+            margin-right: 15px;
+            font-size: 1.3rem;
+            min-width: 25px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1rem;
+        }
+        
+        /* ========== ANIMATIONS ========== */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* ========== MOBILE ADAPTATION ========== */
+        @media (max-width: 1200px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .simple-stats {
+                justify-content: center;
+            }
+            
+            .simple-stat {
+                min-width: 250px;
+                flex: 0 1 calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 75px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 75px);
+                background: rgba(15,12,41,0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 30px 20px;
+                transition: left 0.3s ease;
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+            }
+            
+            .nav-menu a {
+                padding: 15px;
+                border-radius: 8px;
+                background: rgba(255,255,255,0.05);
+                font-size: 1.1rem;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                background: transparent;
+                box-shadow: none;
+                display: none;
+                padding: 15px 0 0 20px;
+            }
+            
+            .nav-menu > li:hover .dropdown-menu {
+                display: block;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero {
+                background-attachment: scroll;
+                padding: 150px 0 90px;
+                margin-top: 70px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                padding: 0 15px;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .tabs-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                max-width: 350px;
+                padding: 18px 25px;
+                font-size: 1rem;
+            }
+            
+            .modal-container {
+                padding: 40px 30px;
+            }
+            
+            .modal-title {
+                font-size: 2.2rem;
+            }
+            
+            .modal-description {
+                font-size: 1.1rem;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .simple-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .simple-stat {
+                min-width: 100%;
+                flex: 1 1 100%;
+                max-width: 400px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .price-tag {
+                font-size: 2.2rem;
+            }
+            
+            .review-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .review-avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .simple-stat {
+                padding: 30px 20px;
+            }
+            
+            .stat-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2.5rem;
+            }
+            
+            .simple-stat .stat-number {
+                font-size: 1.6rem;
+            }
+            
+            .simple-stat .stat-label {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contacts Modal -->
+    <div id="contactsModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <h2 class="modal-title">Order Your Products Now</h2>
+            <p class="modal-description">To place an order or get more information about our Facebook products, contact us directly via Telegram or WhatsApp. We work 24/7 to provide you with the best service and support.</p>
+            
+            <div class="contact-buttons">
+                <a href="https://t.me/TrustyBM_Support" class="contact-btn contact-btn-telegram" target="_blank">
+                    <i class="fab fa-telegram contact-icon"></i> Telegram
+                </a>
+                <a href="https://wa.me/380681405620" class="contact-btn contact-btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp contact-icon"></i> WhatsApp
+                </a>
+            </div>
+            
+            <p style="color: rgba(255,255,255,0.7); margin-top: 30px;">
+                <i class="fas fa-clock"></i> We work 24/7 • 
+                <i class="fas fa-globe"></i> Worldwide delivery • 
+                <i class="fas fa-shield-alt"></i> Secure transactions
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon"></div>
+                    TrustyBM
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-cart"></i> Our Products</a>
+                        <div class="dropdown-menu">
+                            <a href="#agency-section"><i class="fas fa-building"></i> Agency Account for Rent</a>
+                            <a href="#setups-section"><i class="fas fa-cogs"></i> Complete Setups</a>
+                            <a href="#profiles-section"><i class="fas fa-user-circle"></i> Facebook Profiles</a>
+                            <a href="#business-section"><i class="fas fa-briefcase"></i> Business Managers</a>
+                            <a href="#verified-section"><i class="fas fa-check-circle"></i> Verified BMs</a>
+                            <a href="#fanpages-section"><i class="fas fa-flag"></i> Fan Pages</a>
+                        </div>
+                    </li>
+                    <li><a href="#faq-section"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="#policy-section"><i class="fas fa-file-contract"></i> Policy</a></li>
+                    <li><a href="#" id="openContactsHeader"><i class="fas fa-headset"></i> Contacts</a></li>
+                </ul>
+                
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">7 Years in Market • Trusted by 1000+ Clients</div>
+                <h1>Premium Facebook Products</h1>
+                <p>High-quality Facebook accounts, Business Managers, Verified BMs, Fan Pages and complete setups. Perfect for media buyers, agencies, and e-commerce businesses targeting global markets.</p>
+                <button class="btn" id="openContactsHero">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Order Now</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-section">
+        <div class="container">
+            <div class="tabs-buttons">
+                <!-- TOP OFFER: Agency Account for Rent -->
+                <button class="tab-btn active" data-tab="agency-section">
+                    <div class="top-offer-badge">TOP OFFER</div>
+                    <i class="fas fa-building"></i>
+                    <span>Agency Account for Rent</span>
+                </button>
+                <button class="tab-btn" data-tab="setups-section">
+                    <i class="fas fa-cogs"></i>
+                    <span>Complete Setups</span>
+                </button>
+                <button class="tab-btn" data-tab="profiles-section">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Facebook Profiles</span>
+                </button>
+                <button class="tab-btn" data-tab="business-section">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Business Managers</span>
+                </button>
+                <button class="tab-btn" data-tab="verified-section">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified BMs</span>
+                </button>
+                <button class="tab-btn" data-tab="fanpages-section">
+                    <i class="fas fa-flag"></i>
+                    <span>Fan Pages</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AGENCY ACCOUNT FOR RENT SECTION (TOP OFFER) -->
+    <section id="agency-section" class="products-section active">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Premium Partnership</h2>
+                <h2 class="section-title">Agency Account for Rent</h2>
+                <p class="section-description">Exclusive partnership offer: Rent our premium agency accounts with full setup, unlimited replacements, and top-up service from us.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Premium Agency Account -->
+                <div class="product-card">
+                    <div class="product-badge premium-badge">PREMIUM</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Agency Account for Rent</h3>
+                        <p class="product-description">Full setup from us, unlimited replacements, top-up from us, 3-7% commission depending on spend</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Full setup from us (ready to use)</li>
+                        <li><i class="fas fa-check"></i> Unlimited replacements</li>
+                        <li><i class="fas fa-check"></i> Top-up service from us</li>
+                        <li><i class="fas fa-check"></i> 3-7% commission (based on spend)</li>
+                        <li><i class="fas fa-check"></i> Full technical support 24/7</li>
+                        <li><i class="fas fa-check"></i> High spending limits</li>
+                        <li><i class="fas fa-check"></i> Aged and trusted accounts</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">Commission<span style="font-size: 1rem;"> Only</span></div>
+                        <p style="color: #FF3366; font-weight: 700; font-size: 1.2rem;">3-7% depending on spend volume</p>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Agency Account for Rent">Contact for Partnership</button>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Agency Account -->
+                <div class="product-card">
+                    <div class="product-badge top-badge">ENTERPRISE</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Enterprise Agency Account</h3>
+                        <p class="product-description">For large agencies with high spending volume. Custom solutions and dedicated account manager.</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Custom setup for your needs</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Priority top-up service</li>
+                        <li><i class="fas fa-check"></i> 3-5% commission (high volume)</li>
+                        <li><i class="fas fa-check"></i> 24/7 VIP support</li>
+                        <li><i class="fas fa-check"></i> Multiple account management</li>
+                        <li><i class="fas fa-check"></i> Custom reporting</li>
+                        <li><i class="fas fa-check"></i> Strategy consultation</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">Custom<span style="font-size: 1rem;"> Rate</span></div>
+                        <p style="color: #FF3366; font-weight: 700; font-size: 1.2rem;">3-5% for high volume spenders</p>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Enterprise Agency Account">Contact for Enterprise Plan</button>
+                    </div>
+                </div>
+                
+                <!-- Starter Agency Account -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">STARTER</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Starter Agency Account</h3>
+                        <p class="product-description">Perfect for new agencies or media buyers starting with Facebook advertising.</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Basic setup from us</li>
+                        <li><i class="fas fa-check"></i> 30-day replacement guarantee</li>
+                        <li><i class="fas fa-check"></i> Top-up service available</li>
+                        <li><i class="fas fa-check"></i> 5-7% commission</li>
+                        <li><i class="fas fa-check"></i> Standard support</li>
+                        <li><i class="fas fa-check"></i> Good spending limits</li>
+                        <li><i class="fas fa-check"></i> Training included</li>
+                        <li><i class="fas fa-check"></i> Perfect for beginners</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">5-7%<span style="font-size: 1rem;"> Commission</span></div>
+                        <p style="color: #FF3366; font-weight: 700; font-size: 1.2rem;">Flexible terms for beginners</p>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Starter Agency Account">Start Partnership</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setups Section -->
+    <section id="setups-section" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Premium Solutions</h2>
+                <h2 class="section-title">Complete Facebook Setups</h2>
+                <p class="section-description">Ready-to-use Facebook setups for different needs. Everything configured and optimized for advertising.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Beginner Setup -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">NEW</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Beginner Setup</h3>
+                        <p class="product-description">Perfect for starting your Facebook advertising journey</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 1 USA Facebook Account</li>
+                        <li><i class="fas fa-check"></i> Basic Business Manager</li>
+                        <li><i class="fas fa-check"></i> 1 Ad Account ($250 limit)</li>
+                        <li><i class="fas fa-check"></i> Basic Pixel Setup</li>
+                        <li><i class="fas fa-check"></i> 30-minute setup guide</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$89<span style="font-size: 1rem;">/setup</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Beginner Setup">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Pro Setup -->
+                <div class="product-card">
+                    <div class="product-badge hot-badge">HOT</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Pro Setup</h3>
+                        <p class="product-description">Advanced setup for serious advertisers and agencies</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 3 Facebook Accounts (USA/EU/Asia)</li>
+                        <li><i class="fas fa-check"></i> BM with 5 Ad Accounts</li>
+                        <li><i class="fas fa-check"></i> Advanced Pixel Configuration</li>
+                        <li><i class="fas fa-check"></i> Conversion API Setup</li>
+                        <li><i class="fas fa-check"></i> 1-hour personalized setup</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$249<span style="font-size: 1rem;">/setup</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Pro Setup">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Expert Setup -->
+                <div class="product-card">
+                    <div class="product-badge top-badge">TOP</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Expert Setup</h3>
+                        <p class="product-description">Complete enterprise-level setup for large-scale operations</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 5 Facebook Accounts (multi-region)</li>
+                        <li><i class="fas fa-check"></i> BM with 10 Ad Accounts (unlimited)</li>
+                        <li><i class="fas fa-check"></i> Full Pixel & Event Setup</li>
+                        <li><i class="fas fa-check"></i> Custom Tracking Configuration</li>
+                        <li><i class="fas fa-check"></i> 2-hour dedicated setup session</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$499<span style="font-size: 1rem;">/setup</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Expert Setup">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles-section" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Premium Accounts</h2>
+                <h2 class="section-title">Facebook Accounts</h2>
+                <p class="section-description">Premium aged Facebook accounts from different regions. All accounts are reinstated and perfect for advertising.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- USA Account -->
+                <div class="product-card">
+                    <div class="product-badge best-badge">BEST SELLER</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <h3>USA Facebook Account</h3>
+                        <p class="product-description">Old trusted USA Facebook account, reinstated, perfect for advertising</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Old trusted account</li>
+                        <li><i class="fas fa-check"></i> Reinstated and active</li>
+                        <li><i class="fas fa-check"></i> Perfect for advertising</li>
+                        <li><i class="fas fa-check"></i> Stable and reliable</li>
+                        <li><i class="fas fa-check"></i> USA region</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$29<span style="font-size: 1rem;">/account</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="USA Facebook Account">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- EU Account -->
+                <div class="product-card">
+                    <div class="product-badge hot-badge">HOT</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <h3>EU Facebook Account</h3>
+                        <p class="product-description">Old trusted EU Facebook account, reinstated, perfect for advertising</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Old trusted account</li>
+                        <li><i class="fas fa-check"></i> Reinstated and active</li>
+                        <li><i class="fas fa-check"></i> Perfect for advertising</li>
+                        <li><i class="fas fa-check"></i> Stable and reliable</li>
+                        <li><i class="fas fa-check"></i> European Union region</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$29<span style="font-size: 1rem;">/account</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="EU Facebook Account">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Asia Account -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">BUDGET</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <h3>Asia Facebook Account</h3>
+                        <p class="product-description">Old trusted Asia Facebook account, reinstated, perfect for advertising</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Old trusted account</li>
+                        <li><i class="fas fa-check"></i> Reinstated and active</li>
+                        <li><i class="fas fa-check"></i> Perfect for advertising</li>
+                        <li><i class="fas fa-check"></i> Stable and reliable</li>
+                        <li><i class="fas fa-check"></i> Asia region</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$19<span style="font-size: 1rem;">/account</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Asia Facebook Account">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Managers Section -->
+    <section id="business-section" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Advertising Power</h2>
+                <h2 class="section-title">Business Managers</h2>
+                <p class="section-description">Premium Business Managers with multiple ad accounts and high spending limits.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- BM 5 OLD -->
+                <div class="product-card">
+                    <div class="product-badge best-badge">BEST VALUE</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>BM 5 OLD (2022-2024)</h3>
+                        <p class="product-description">Aged BM with 4 empty slots or 5 created accounts, $250 daily spend</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Aged 2022-2024</li>
+                        <li><i class="fas fa-check"></i> 4 empty slots or 5 created accounts</li>
+                        <li><i class="fas fa-check"></i> $250 daily spend limit</li>
+                        <li><i class="fas fa-check"></i> Higher trust score</li>
+                        <li><i class="fas fa-check"></i> Less likely to be flagged</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$155<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="BM 5 OLD (2022-2024)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- BM 3 Ad Accounts -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">NEW</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>BM 3 Ad Accounts (2023)</h3>
+                        <p class="product-description">BM with 3 ad accounts or 2 empty slots, «unlimited» spending</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 3 created accounts or 2 empty slots</li>
+                        <li><i class="fas fa-check"></i> «Unlimited» spending limit</li>
+                        <li><i class="fas fa-check"></i> 2023 creation date</li>
+                        <li><i class="fas fa-check"></i> 1 account already created</li>
+                        <li><i class="fas fa-check"></i> Ready for immediate use</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$175<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="BM 3 Ad Accounts (2023)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- BM 5 Ad Accounts -->
+                <div class="product-card">
+                    <div class="product-badge hot-badge">HOT</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>BM 5 Ad Accounts (2025)</h3>
+                        <p class="product-description">BM with 5 created ad accounts, «unlimited» spending</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 5 created ad accounts</li>
+                        <li><i class="fas fa-check"></i> «Unlimited» spending limit</li>
+                        <li><i class="fas fa-check"></i> 2025 creation date</li>
+                        <li><i class="fas fa-check"></i> All accounts ready to use</li>
+                        <li><i class="fas fa-check"></i> Ideal for scaling campaigns</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$250<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="BM 5 Ad Accounts (2025)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- BM 10 unlimited OLD -->
+                <div class="product-card">
+                    <div class="product-badge top-badge">PREMIUM</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>BM 10 unlimited OLD</h3>
+                        <p class="product-description">Aged BM with 10 created ad accounts, «unlimited» spending, 2022-2024</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 10 created ad accounts</li>
+                        <li><i class="fas fa-check"></i> «Unlimited» spending limit</li>
+                        <li><i class="fas fa-check"></i> Aged 2022-2024</li>
+                        <li><i class="fas fa-check"></i> High trust score</li>
+                        <li><i class="fas fa-check"></i> Perfect for large agencies</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$499<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="BM 10 unlimited OLD">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified BMs Section -->
+    <section id="verified-section" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Trust & Security</h2>
+                <h2 class="section-title">Verified Business Managers</h2>
+                <p class="section-description">Fully verified Business Managers with real verification documents and spending limits.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Verified BM 2025 -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">NEW</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Verified BM (2025)</h3>
+                        <p class="product-description">BM with 1 ad account, $50 daily spend, real verification</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 1 ad account</li>
+                        <li><i class="fas fa-check"></i> $50 daily spend limit</li>
+                        <li><i class="fas fa-check"></i> Real verification documents</li>
+                        <li><i class="fas fa-check"></i> 2025 creation date</li>
+                        <li><i class="fas fa-check"></i> Ready for immediate use</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$30<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Verified BM (2025)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Verified BM OLD -->
+                <div class="product-card">
+                    <div class="product-badge hot-badge">HOT</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Verified BM OLD (2023-2024)</h3>
+                        <p class="product-description">Aged BM with 1 ad account, $50 daily spend, real verification</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 1 ad account</li>
+                        <li><i class="fas fa-check"></i> $50 daily spend limit</li>
+                        <li><i class="fas fa-check"></i> Real verification documents</li>
+                        <li><i class="fas fa-check"></i> Aged 2023-2024</li>
+                        <li><i class="fas fa-check"></i> Higher trust score</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$41<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Verified BM OLD (2023-2024)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Verified BM with Pixel Sharing -->
+                <div class="product-card">
+                    <div class="product-badge top-badge">TOP</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Verified BM with Pixel Sharing</h3>
+                        <p class="product-description">Aged BM with pixel sharing capability, $50 daily spend</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 1 ad account</li>
+                        <li><i class="fas fa-check"></i> $50 daily spend limit</li>
+                        <li><i class="fas fa-check"></i> Real verification documents</li>
+                        <li><i class="fas fa-check"></i> Aged 2023-2024</li>
+                        <li><i class="fas fa-check"></i> Pixel sharing capability</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$48<span style="font-size: 1rem;">/BM</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Verified BM with Pixel Sharing">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Pages Section -->
+    <section id="fanpages-section" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Social Presence</h2>
+                <h2 class="section-title">Facebook Fan Pages</h2>
+                <p class="section-description">Premium Facebook Fan Pages with followers and engagement for your business or brand.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Fan Page with 1000 followers -->
+                <div class="product-card">
+                    <div class="product-badge hot-badge">POPULAR</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>Fan Page with 1000 Followers</h3>
+                        <p class="product-description">Fan Page with 1000 real followers, aged 2022-2023, can be renamed</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 1000 real followers</li>
+                        <li><i class="fas fa-check"></i> Aged 2022-2023</li>
+                        <li><i class="fas fa-check"></i> Can be renamed</li>
+                        <li><i class="fas fa-check"></i> Organic engagement</li>
+                        <li><i class="fas fa-check"></i> Ready for promotion</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$18<span style="font-size: 1rem;">/page</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Fan Page with 1000 Followers">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Verified Fan Page (Blue Tick) -->
+                <div class="product-card">
+                    <div class="product-badge top-badge">PREMIUM</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-badge-check"></i>
+                        </div>
+                        <h3>Verified Fan Page (Blue Tick)</h3>
+                        <p class="product-description">Official verified Fan Page with blue checkmark on original BM</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Official blue verification tick</li>
+                        <li><i class="fas fa-check"></i> On original Business Manager</li>
+                        <li><i class="fas fa-check"></i> High authority status</li>
+                        <li><i class="fas fa-check"></i> Increased credibility</li>
+                        <li><i class="fas fa-check"></i> Priority in search results</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$660<span style="font-size: 1rem;">/page</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Verified Fan Page (Blue Tick)">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Custom Fan Page -->
+                <div class="product-card">
+                    <div class="product-badge new-badge">CUSTOM</div>
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Custom Fan Page Package</h3>
+                        <p class="product-description">Custom Fan Page with specific follower count and requirements</p>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Custom follower count</li>
+                        <li><i class="fas fa-check"></i> Specific niche/industry</li>
+                        <li><i class="fas fa-check"></i> Custom branding</li>
+                        <li><i class="fas fa-check"></i> Content strategy included</li>
+                        <li><i class="fas fa-check"></i> Growth plan</li>
+                    </ul>
+                    
+                    <div class="product-price">
+                        <div class="price-tag">$100<span style="font-size: 1rem;">+</span></div>
+                    </div>
+                    
+                    <div class="product-footer">
+                        <button class="btn-block order-btn" data-product="Custom Fan Page Package">Contact for Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews-section" class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle" style="color: var(--reviews-color); border: 2px solid var(--reviews-color);">Verified Reviews</h2>
+                <h2 class="section-title" style="color: var(--reviews-color);">Client Testimonials</h2>
+                <p class="section-description">Real feedback from our global clients. All purchases are protected by our verified refund policy. Site verified and trusted since 2017.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>ER</span>
+                        </div>
+                        <div class="review-meta">
+                            <h4 class="review-name">Ethan Richardson</h4>
+                            <div class="review-info">
+                                <span style="color: var(--reviews-color); font-weight: 600;">New York, USA</span>
+                                <span>Verified • Mar 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">5.0 • Verified Purchase</span>
+                    </div>
+                    
+                    <p class="review-text">
+                        "Received 3 BMs within 20 minutes. All accounts active after 2 months. Professional support team helped with setup."
+                    </p>
+                    
+                    <div class="review-footer">
+                        <span class="product-tag">BM 5 Ad Accounts</span>
+                        <span class="purchase-type">• PayPal Payment</span>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>SC</span>
+                        </div>
+                        <div class="review-meta">
+                            <h4 class="review-name">Sophia Chen</h4>
+                            <div class="review-info">
+                                <span style="color: var(--reviews-color); font-weight: 600;">Los Angeles, USA</span>
+                                <span>Verified • Feb 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">5.0 • Repeat Customer</span>
+                    </div>
+                    
+                    <p class="review-text">
+                        "Third purchase from TrustyBM. Accounts are stable and work perfectly. Replacement policy works - had one account replaced quickly."
+                    </p>
+                    
+                    <div class="review-footer">
+                        <span class="product-tag">USA Facebook Accounts</span>
+                        <span class="purchase-type">• Wise Transfer</span>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>MW</span>
+                        </div>
+                        <div class="review-meta">
+                            <h4 class="review-name">Marcus Weber</h4>
+                            <div class="review-info">
+                                <span style="color: var(--reviews-color); font-weight: 600;">Berlin, Germany</span>
+                                <span>Verified • Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="rating-text">4.5 • Verified Purchase</span>
+                    </div>
+                    
+                    <p class="review-text">
+                        "Good quality accounts. One needed replacement within 24 hours as promised. Will buy again for my agency clients."
+                    </p>
+                    
+                    <div class="review-footer">
+                        <span class="product-tag">Expert Setup</span>
+                        <span class="purchase-type">• Crypto Payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle" style="color: var(--faq-color); border: 2px solid var(--faq-color);">Support</h2>
+                <h2 class="section-title" style="color: var(--faq-color);">Frequently Asked Questions</h2>
+                <p class="section-description">Find answers to common questions about our products, purchasing process, and support.</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I purchase products?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To purchase any product, contact us directly via Telegram or WhatsApp. Our support team will guide you through the process and provide payment details.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your account replacement policy?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 24-hour replacement guarantee. If any account has issues within the first 24 hours after delivery, we replace it immediately at no additional cost.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does delivery take?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most Facebook accounts and BMs are delivered within 15-30 minutes after payment confirmation. Custom setups may take up to 24 hours.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are the accounts safe and stable?
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our accounts are aged 1-3 years, properly verified, and tested before delivery. We provide guidelines for safe usage to maximize account longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="simple-stats-section">
+        <div class="container">
+            <div class="simple-stats">
+                <div class="simple-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <span class="stat-number">7+ Years</span>
+                    <span class="stat-label">in the market</span>
+                </div>
+                <div class="simple-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <span class="stat-number">Unique</span>
+                    <span class="stat-label">products</span>
+                </div>
+                <div class="simple-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <span class="stat-number">Work with</span>
+                    <span class="stat-label">insiders</span>
+                </div>
+                <div class="simple-stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <span class="stat-number">Work with</span>
+                    <span class="stat-label">guarantors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section id="policy-section" class="policy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle" style="color: var(--policy-color); border: 2px solid var(--policy-color);">Legal</h2>
+                <h2 class="section-title" style="color: var(--policy-color);">Policies & Terms</h2>
+                <p class="section-description">Click to expand each section. We ensure transparent and secure transactions.</p>
+            </div>
+            
+            <div class="policy-container">
+                <!-- Refund Policy -->
+                <div class="policy-item">
+                    <div class="policy-question">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-money-bill-wave policy-icon"></i>
+                            <h3>Refund Policy</h3>
+                        </div>
+                        <i class="fas fa-plus policy-toggle"></i>
+                    </div>
+                    <div class="policy-answer">
+                        <div class="policy-content">
+                            <h4>14-Day Refund Guarantee</h4>
+                            <p>We offer a 14-day refund guarantee if the product is not delivered as promised or doesn't match the description.</p>
+                            <p>To request a refund, please contact our support team within 14 days of purchase with your order details. Refunds are processed within 3-5 business days.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Terms of Service -->
+                <div class="policy-item">
+                    <div class="policy-question">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-file-contract policy-icon"></i>
+                            <h3>Terms of Service</h3>
+                        </div>
+                        <i class="fas fa-plus policy-toggle"></i>
+                    </div>
+                    <div class="policy-answer">
+                        <div class="policy-content">
+                            <h4>TERMS OF SERVICE</h4>
+                            <p>This website is operated by TrustyBM. Throughout the site, the terms "we", "us" and "our" refer to TrustyBM. TrustyBM offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+                            
+                            <h4>SECTION 1 - ONLINE STORE TERMS</h4>
+                            <p>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.</p>
+                            <p>You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).</p>
+                            <p>You must not transmit any worms or viruses or any code of a destructive nature.</p>
+                            <p>A breach or violation of any of the Terms will result in an immediate termination of your Services.</p>
+                            
+                            <h4>SECTION 2 - GENERAL CONDITIONS</h4>
+                            <p>We reserve the right to refuse service to anyone for any reason at any time.</p>
+                            <p>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.</p>
+                            <p>The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p>
+                            
+                            <h4>SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION</h4>
+                            <p>We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.</p>
+                            
+                            <h4>SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES</h4>
+                            <p>Prices for our products are subject to change without notice.</p>
+                            <p>We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.</p>
+                            <p>We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.</p>
+                            
+                            <h4>SECTION 5 - PRODUCTS OR SERVICES</h4>
+                            <p>Certain products or services may be available exclusively online through the website. These products or services may have limited quantities and are subject to return or exchange only according to our Return Policy.</p>
+                            <p>We have made every effort to display as accurately as possible the colours and images of our products that appear at the store. We cannot guarantee that your computer monitor's display of any colour will be accurate.</p>
+                            
+                            <h4>SECTION 6 - OPTIONAL TOOLS</h4>
+                            <p>We may provide you with access to third-party tools over which we neither monitor nor have any control nor input.</p>
+                            <p>You acknowledge and agree that we provide access to such tools "as is" and "as available" without any representations or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools. The warranty only applies to unused by customer merchandise.</p>
+                            
+                            <h4>SECTION 7 - THIRD-PARTY LINKS</h4>
+                            <p>Certain content, products and services available via our Service may include materials from third-parties.</p>
+                            <p>Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties.</p>
+                            
+                            <h4>SECTION 8 - PERSONAL INFORMATION</h4>
+                            <p>Your submission of personal information through the store is governed by our Privacy Policy.</p>
+                            
+                            <h4>SECTION 9 - PROHIBITED USES</h4>
+                            <p>In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.</p>
+                            
+                            <h4>SECTION 10 - SEVERABILITY</h4>
+                            <p>In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.</p>
+                            
+                            <h4>SECTION 11 - TERMINATION</h4>
+                            <p>The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes.</p>
+                            <p>These Terms of Service are effective unless and until terminated by either you or us. You may terminate these Terms of Service at any time by notifying us that you no longer wish to use our Services, or when you cease using our site.</p>
+                            
+                            <h4>SECTION 12 - ENTIRE AGREEMENT</h4>
+                            <p>The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.</p>
+                            <p>These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of the Terms of Service).</p>
+                            
+                            <h4>SECTION 13 - GOVERNING LAW</h4>
+                            <p>These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of Hong Kong.</p>
+                            
+                            <h4>SECTION 14 - CHANGES TO TERMS OF SERVICE</h4>
+                            <p>You can review the most current version of the Terms of Service at any time at this page.</p>
+                            <p>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Privacy Policy -->
+                <div class="policy-item">
+                    <div class="policy-question">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-shield-alt policy-icon"></i>
+                            <h3>Privacy Policy</h3>
+                        </div>
+                        <i class="fas fa-plus policy-toggle"></i>
+                    </div>
+                    <div class="policy-answer">
+                        <div class="policy-content">
+                            <h4>PRIVACY POLICY</h4>
+                            <p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from trustybm.com (the "Site").</p>
+                            
+                            <h4>PERSONAL INFORMATION WE COLLECT</h4>
+                            <p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as "Device Information".</p>
+                            
+                            <p>We collect Device Information using the following technologies:</p>
+                            <ul>
+                                <li>"Cookies" are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit http://www.allaboutcookies.org.</li>
+                                <li>"Log files" track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+                                <li>"Web beacons", "tags", and "pixels" are electronic files used to record information about how you browse the Site.</li>
+                            </ul>
+                            
+                            <p>Additionally when you make a purchase or attempt to make a purchase through the Site, we collect certain information from you, including your name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number. We refer to this information as "Order Information".</p>
+                            
+                            <p>When we talk about "Personal Information" in this Privacy Policy, we are talking both about Device Information and Order Information.</p>
+                            
+                            <h4>HOW DO WE USE YOUR PERSONAL INFORMATION?</h4>
+                            <p>We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations). Additionally, we use this Order Information to:</p>
+                            <ul>
+                                <li>Communicate with you;</li>
+                                <li>Screen our orders for potential risk or fraud; and</li>
+                                <li>When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.</li>
+                            </ul>
+                            
+                            <p>Text Marketing and notifications: By subscribing to text notifications you agree to receive recurring automated marketing messages at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. HELP for help. Msg & Data rates may apply. More info view Privacy Policy and ToS.</p>
+                            
+                            <p>We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns).</p>
+                            
+                            <h4>SHARING YOUR PERSONAL INFORMATION</h4>
+                            <p>We share your Personal Information with third parties to help us use your Personal Information, as described above. We also use Google Analytics to help us understand how our customers use the Site -- you can read more about how Google uses your Personal Information here: https://www.google.com/intl/en/policies/privacy/. You can also opt-out of Google Analytics here: https://tools.google.com/dlpage/gaoptout.</p>
+                            
+                            <p>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</p>
+                            
+                            <h4>BEHAVIOURAL ADVERTISING</h4>
+                            <p>As described above, we use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For more information about how targeted advertising works, you can visit the Network Advertising Initiative's ("NAI") educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.</p>
+                            
+                            <p>You can opt out of targeted advertising by using the links below:</p>
+                            <ul>
+                                <li>Facebook: https://www.facebook.com/settings/?tab=ads</li>
+                                <li>Google: https://www.google.com/settings/ads/anonymous</li>
+                                <li>Bing: https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</li>
+                            </ul>
+                            
+                            <p>Additionally, you can opt out of some of these services by visiting the Digital Advertising Alliance's opt-out portal at: http://optout.aboutads.info/.</p>
+                            
+                            <h4>DO NOT TRACK</h4>
+                            <p>Please note that we do not alter our Site's data collection and use practices when we see a Do Not Track signal from your browser.</p>
+                            
+                            <h4>YOUR RIGHTS</h4>
+                            <p>If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.</p>
+                            
+                            <p>Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States.</p>
+                            
+                            <h4>DATA RETENTION</h4>
+                            <p>When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.</p>
+                            
+                            <h4>CHANGES</h4>
+                            <p>We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.</p>
+                            
+                            <h4>CONTACT US</h4>
+                            <p>For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at support@trustybm.com or by mail using the details provided below:</p>
+                            <p>[Your Business Address Here]<br>
+                            [City, State, ZIP Code]<br>
+                            [Country]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon"></div>
+                        TrustyBM
+                    </div>
+                    <p>Providing premium Facebook products since 2017. Accounts, Business Managers, Verified BMs, Fan Pages and complete setups.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/TrustyBM_Support" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/380681405620" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" id="openContactsFooter"><i class="fas fa-headset"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#agency-section"><i class="fas fa-building"></i> Agency Account</a></li>
+                        <li><a href="#setups-section"><i class="fas fa-cogs"></i> Setups</a></li>
+                        <li><a href="#faq-section"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="#policy-section"><i class="fas fa-file-contract"></i> Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fab fa-telegram"></i> @TrustyBM_Support</p>
+                    <p><i class="fab fa-whatsapp"></i> +380 68 140 56 20</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Support</p>
+                    <p><i class="fas fa-globe"></i> Worldwide Service</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 TrustyBM. All rights reserved.</p>
+                <p>Facebook is a trademark of Meta Platforms, Inc. We are not affiliated with Facebook/Meta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== MOBILE MENU ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    mobileToggle.innerHTML = navMenu.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            // ========== TAB SWITCHING ==========
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const productSections = document.querySelectorAll('.products-section');
+            
+            function switchTab(tabId) {
+                // Update active tab button
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if(btn.getAttribute('data-tab') === tabId) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Update active product section
+                productSections.forEach(section => {
+                    section.classList.remove('active');
+                    if(section.id === tabId) {
+                        section.classList.add('active');
+                    }
+                });
+            }
+            
+            // Tab button click event
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
+            });
+            
+            // ========== CONTACTS MODAL ==========
+            const contactsModal = document.getElementById('contactsModal');
+            const closeModal = document.getElementById('closeModal');
+            const openContactsHero = document.getElementById('openContactsHero');
+            const openContactsHeader = document.getElementById('openContactsHeader');
+            const openContactsFooter = document.getElementById('openContactsFooter');
+            
+            function openContactsModal() {
+                contactsModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeContactsModal() {
+                contactsModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Open modal events
+            if (openContactsHero) openContactsHero.addEventListener('click', openContactsModal);
+            if (openContactsHeader) openContactsHeader.addEventListener('click', openContactsModal);
+            if (openContactsFooter) openContactsFooter.addEventListener('click', openContactsModal);
+            
+            // Close modal events
+            if (closeModal) closeModal.addEventListener('click', closeContactsModal);
+            
+            // Close modal when clicking outside
+            contactsModal.addEventListener('click', (e) => {
+                if(e.target === contactsModal) {
+                    closeContactsModal();
+                }
+            });
+            
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && contactsModal.classList.contains('active')) {
+                    closeContactsModal();
+                }
+            });
+            
+            // ========== ORDER BUTTONS ==========
+            document.querySelectorAll('.order-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    openContactsModal();
+                });
+            });
+            
+            // ========== FAQ ACCORDION ==========
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // ========== POLICY ACCORDION ==========
+            const policyItems = document.querySelectorAll('.policy-item');
+            
+            policyItems.forEach(item => {
+                const question = item.querySelector('.policy-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other items
+                    policyItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // ========== SMOOTH SCROLLING ==========
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if(href === '#') return;
+                    
+                    const targetElement = document.querySelector(href);
+                    if(targetElement) {
+                        e.preventDefault();
+                        
+                        // If link is to a product section, switch to that tab
+                        if (['#agency-section', '#setups-section', '#profiles-section', '#business-section', '#verified-section', '#fanpages-section'].includes(href)) {
+                            const tabId = href.substring(1);
+                            switchTab(tabId);
+                        }
+                        
+                        // Scroll to element
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // ========== ANIMATE CARDS ON SCROLL ==========
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe product cards
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Observe review cards
+            document.querySelectorAll('.review-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Observe stats cards
+            document.querySelectorAll('.simple-stat').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // ========== DROPDOWN MENU FOR MOBILE ==========
+            const dropdownToggle = document.querySelector('.nav-menu > li:first-child');
+            
+            if (dropdownToggle && window.innerWidth <= 768) {
+                dropdownToggle.addEventListener('click', function(e) {
+                    if (e.target.closest('a')) {
+                        const dropdown = this.querySelector('.dropdown-menu');
+                        if (dropdown) {
+                            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                            e.preventDefault();
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
